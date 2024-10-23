@@ -5,6 +5,11 @@
 
 }
 
+
+:root
+{
+    font-size: 16px;
+}
 body
 {
     background-color: rgb(153, 172, 166);
@@ -29,6 +34,14 @@ body
     color: white;
 
     grid-row: 1 / -1;
+
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 100px repeat(5, clamp(30px, 50px, 80px)) 200px repeat(3, clamp(30px, 50px, 80px));
+
+    grid-gap: 10px;
 }
 
 #header
@@ -39,4 +52,39 @@ body
 #main
 {
     background-color: rgb(99, 122, 122);
+}
+
+#dash
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+#dash > h1
+{
+    margin: 20px;
+    font-size: 2.3rem;
+}
+
+#dash > img
+{
+    height: 80px
+}
+.nav-btn
+{
+    display: grid;
+
+    grid-template-columns: 60px 100px;
+    margin-left: 10px;
+}
+
+.nav-text
+{
+    font-size: 1.7rem;
+}
+.icon
+{
+    height: 30px;
+    filter: invert(100%);
 }
