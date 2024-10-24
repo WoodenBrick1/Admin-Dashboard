@@ -9,6 +9,7 @@
 :root
 {
     font-size: 16px;
+    font-family: "Roboto", sans-serif;
 }
 body
 {
@@ -75,7 +76,7 @@ body
 {
     display: grid;
 
-    grid-template-columns: 60px 100px;
+    grid-template-columns: 70px 100px;
     margin-left: 10px;
 }
 
@@ -87,4 +88,93 @@ body
 {
     height: 30px;
     filter: invert(100%);
+}
+
+
+#header > .icon
+{
+    filter: invert(0%) 
+}
+
+#header
+{
+    padding: 20px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 1000px 60px 100px 200px;
+    grid-template-rows: 100px 1fr;
+
+}
+#searchbar
+{
+    background-color: rgb(199, 199, 199);
+    width: 500px;
+    height: 30px;
+
+    border-radius: 100px;
+}
+
+
+
+.pfp
+{
+    border-radius: 50%;
+}
+
+#one
+{
+    width: 70px;
+    height: 70px;
+
+    margin-top: -15px;
+}
+#two
+{
+    width: 90px;
+    height: 90px;
+
+    margin-top: -25px;
+}
+
+
+#header > .accName
+{
+    font-size: 1.2rem;
+}
+
+#greet-message
+{
+    display: grid;
+
+    grid-template-rows: 30px 40px;
+
+    margin-top: -15px;
+}
+#greet-message > .accName
+{
+    font-size: 1.7rem;
+}
+.accName
+{
+    font-weight: 800;
+}
+
+
+#buttons
+{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: 35px;
+
+    gap: 20px;
+
+    
+}
+.btn
+{
+      background-color: rgb(179, 218, 218);
+      font-size: 1.2rem;
+      border-radius: 10%;
+      border: 3px solid rgb(124, 146, 146);
 }
