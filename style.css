@@ -28,6 +28,7 @@ body
     grid-template-rows: 1fr 5fr;
 }
 
+/* SideBar*/
 #sidebar
 {
     background-color: rgb(36, 142, 212);
@@ -96,13 +97,14 @@ body
     filter: invert(0%) 
 }
 
+/* Header */
 #header
 {
     padding: 20px;
 
     display: grid;
     justify-content: center;
-    grid-template-columns: 100px 1000px 60px 100px 200px;
+    grid-template-columns: 50px 1000px 60px 100px 200px;
     grid-template-rows: 100px 1fr;
 
 }
@@ -135,6 +137,7 @@ body
     height: 90px;
 
     margin-top: -25px;
+    margin-left: -60px;
 }
 
 
@@ -177,4 +180,50 @@ body
       font-size: 1.2rem;
       border-radius: 10%;
       border: 3px solid rgb(124, 146, 146);
+}
+
+
+
+
+/* Main DashBoard */
+
+
+#main
+{
+    display: grid;
+
+    grid-template-columns: 2.5fr 0.5fr 1fr;
+    grid-template-rows: 50px 300px 30px 50px 200px ;
+    
+}
+#dashboard
+{
+    
+    grid-row: 2 / -1;
+    background-color: grey;
+}
+
+#news
+{
+    grid-column: 3 / 4;
+    grid-row: 2/3;
+    background-color: red;
+}
+
+#ann-text
+{
+    grid-column: 3;
+}
+
+#trend-text
+{
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+}
+
+#trending
+{
+    grid-row: 5 / span 1;
+    grid-column: 3 / 4;
+    background-color: aqua;
 }
